@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Open+Sans+Condensed:wght@300&display=swap');
+
+	html{
+	    font-size: 62.5%;
+	}
+
+	body{
+        position: relative;
+        font-family: 'Bellota Text', cursive;
+        font-family: 'Open Sans Condensed', sans-serif;	        font: 1.6rem;
+
+	        margin: 0;
+	}
+
+	h1,h2,h3,p,ul,ol,a,th,figure{
+        text-decoration: none;
+	    margin: 0;
+	    list-style: none;
+	    padding: 0;
+	    font-weight: 400;
+	}
+
+
+*{
+        box-sizing: border-box;
+}
+
+
+header {
+    z-index: 200;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+header>h1>img{
+    width: 10rem;
+    height:10rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.banniere_a{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 80vh;
+    background-image:url(../asset/wallpaper_car-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed
+
+}
+
+.banniere_a>p{
+    font-size:5rem;
+    position: absolute;
+    top: 50%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banniere_b{
+    
+    display: grid;
+    margin: 2rem auto;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    height: 40vh;
+    grid-gap: 2rem; 
+}
+
+
+
+.banniere_b>div{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .3s;
+
+    width: 99%;
+
+}
+
+
+.banniere_b>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .3s;
+}
+
+.banniere_c>h2:first-child{
+    padding: 2rem;
+    text-align: center;
+    transition: all ease-ease-in-out .3s;
+    animation: textalign .5s linear;
+    font-size: 3rem;
+
+}
+
+.div_grid_text{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.div_grid_text>p{
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    padding: 1rem;
+}
+.div_grid_text>img{
+    display: block;
+    margin:0 auto;
+    vertical-align: middle;
+    width: 90%;
+}
+.banniere_c>p{
+    padding: .5rem;
+}
+
+
+footer>ul{
+    
+    text-align: center;
+    width: 90%;
+    margin: 4rem auto;
+    display: grid;
+    font-size: 2rem;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+  
+  footer>ul>li:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(184, 150, 150, 0.6) 30%, rgb(185, 0, 0) 50%, rgba(238, 238, 238, 0.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+  }
+  
+ 
+
+@-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
+
+  footer>ul>li>a{
+      color: black;
+  }

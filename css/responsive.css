@@ -1,0 +1,29 @@
+@media screen and (max-width: 640px) {
+
+    .banniere_b{
+        display: grid;
+        margin: 2rem auto;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        height: 90vh;
+        grid-gap: 2rem; 
+    }
+    
+    footer{
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color: rgb(255, 255, 255);
+        height: auto;  
+      }
+    footer>ul{
+        margin-top: 1rem;
+
+        display: block;
+        
+    }
+    footer>ul>li{
+        padding: 1rem;
+    }
+}
