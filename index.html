@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/burger_anim.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>BHB </title>
 </head>
-<body>
-    <header>
-        <h1 class="logo"><img src="./asset/BBH PIECES AUTO.png" alt="logo bbh"></h1>
+<body class="body_w_effect">
+    <header class="header_w_sc">
+        <h1 class="logo"><img src="./asset/BBH PIECES AUTO-3.png" alt="logo bbh"></h1>
         <div class="demo">
             <div class="menu-icon">
                 <input class="menu-icon__cheeckbox" type="checkbox" />
@@ -30,39 +31,131 @@
             <li>ACCUEIL</li>
             <li>À PROPOS</li>
 
-            <li>NOS PRIX</li>
-            <li>CONTACTEZ NOUS</li>
-
+            <li>NOS HORAIRES</li>
+            <li class="contact_button">CONTACTEZ NOUS</li>
         </ul>
  </div>
 <main>
-   <div class="banniere_a">
-        <p>Bienvenue</p>
-   </div>
+
+  <div class="effect_menu">
+
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./asset/cap_ze.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./asset/Capture d’écran 2021-11-19 à 19.10.25.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./asset/Capture d’écran 2021-11-19 à 19.11.41.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
    <div class="banniere_c">
     <h2>Quelle que soit la pièce que vous cherchez , nous pouvons vous la fournir</h2>
     <div class="div_grid_text">
-        <img src="./asset/wallpaper_car_furniture.jpg" alt="pieces automobile">
+        <img src="https://lh3.googleusercontent.com/proxy/5p9wwBWBOmqVhv_6YWPVNYSlKg3leWEuAeWlrJrXLbMppT5eUo861BiwA-Jm9bywf_rw-7I7AM_JEVRlmxizjGMb3KYWMQojh3lc_IGdmtknbPwuwrEj9642SPQmUk3LtkmsWJdwl4-2t5ywYYfyXauTDqalLQ" alt="pieces automobile">
         <p>Vous recherchez une pièce automobile pour un modèle de voiture en particulier ou vous souhaitez entretenir votre véhicule, BBH PIECES AUTO à La Courneuve située dans le département de la Seine-Saint-Denis en région Île-de-France vous propose tout ce dont vous avez besoin pour les réparations et l’entretien de votre voiture.
             Nous vous proposons un grand nombre d’articles en stock, nous traitons rapidement vos commandes :kit de distribution, plaquettes de frein, échappement, rétroviseur, filtre, huile, filtres auto alternateur, amortisseur, boîte de vitesse, capot, catalyseur,pièces échappement, pièces freinage pompe à carburant, pièces climatisation, pièces amortisseur, pompe hydraulique auto, pièces auto radiateur, etc.
             Quelle que soit la marque de votre automobile, il y a une grande variété de produits pour couvrir vos besoins et tous les problèmes que votre voiture pourrait rencontrer. </p>
     </div>
 </div>
    <nav class="banniere_b">
-        <div class="a"></div>
-        <div class="b"></div>
-        <div class="c"></div>
+        <div class="a"><p>DOUBLE CLÉ</p></div>
+        <div class="b"><p>RECHERCHE PANNE ELECTRIQUE (SPÉCIALISTE FAP)</p></div>
+        <div class="c"><p>SERVICE DE MONTAGE SANS RDV</p></div>
     </nav>
+    <div class="container" id="container">
+        <h1>CONTACTEZ NOUS</h1>
+        <form target="_blank" action="https://formsubmit.co/djoussama2000@gmail.com" method="POST">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="Nom Prénom" class="form-control" placeholder="Nom Prénom" required>
+              </div>
+              <div class="col">
+                <input type="email" name="Adresse-mail" class="form-control" placeholder="Adresse-mail" required>
+              </div>
+              <div class="col">
+                <input type="text" name="Objet du mail" class="form-control" placeholder="Sujet du mail" required>
+              </div>
+              <div class="col">
+                <input type="text" name="Immatriculation" class="form-control" placeholder="Numéro d'immatriculation" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Votre message" class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <input type="hidden" name="_captcha" value="false">
+
+
+          <button type="submit" class="btn btn-lg btn-dark btn-block">Envoyer</button>
+        </form>
+        <div class="num">
+          <a href="tel:01 48 37 42 19">01 48 37 42 19</a>
+        </div>
+      </div>
+     
+      <div class="popup_garages" id="nos_garages_id">
+
+
+        <h2>NOS GARAGES <span class="close_button">X</span></h2>
+
+          <div class="grid_nosgarages">
+            <div class="a">
+              <p>1 er garage</p>
+            </div>
+            <div class="a">
+              <p>2 eme garage</p>
+            </div>
+            <div class="a">
+              <p>3 eme garage</p>
+            </div>
+            <div class="a">
+              <p>4 eme garage</p>
+            </div>
+            <div class="a">
+              <p>5 eme garage</p>
+            </div>
+            <div class="a">
+              <p>6 eme garage</p>
+            </div>
+          </div>
+      </div>
 </main>
+
 <footer>
     <ul>
         <li><a href="#">Mentions légales</a></li>
         <li><a href="#">BBH PIÈCES AUTOS</a></li>
-        <li><a href="#">Contactez-nous </a></li>
-        <li><a href="#">Qui sommes-nous ?</a></li>
-
+        <li><a class="contact_fo">Contactez-nous </a></li>
+      <li><a class="ng_button">Nos garages</a></li>
     </ul>
+
+
+    <div>
+      <p class="disp_pls_f">PAIEMENT EN PLUSIEURS FOIS DISPONIBLE</p>
+    </div>
 </footer>
 <script src="./ap/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

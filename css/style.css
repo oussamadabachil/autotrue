@@ -5,13 +5,46 @@
 	    font-size: 62.5%;
 	}
 
-	body{
+  *{
+    scroll-behavior: smooth;
+
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;	    
+  }
+	.body_w_effect{
         position: relative;
         font-family: 'Bellota Text', cursive;
         font-family: 'Open Sans Condensed', sans-serif;	        font: 1.6rem;
 
 	        margin: 0;
 	}
+
+  .effect_menu{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 47, 255, 0.13);
+    z-index: 2;
+    transition: all ease-in-out .3s;
+  }
+
+  .effect_menu_show{
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.575);
+    z-index: 2;
+    transition: all ease-in-out .3s;
+  }
 
 	h1,h2,h3,p,ul,ol,a,th,figure{
         text-decoration: none;
@@ -27,13 +60,22 @@
 }
 
 
-header {
+.header_w_sc {
     z-index: 200;
     position: fixed;
     width: 100%;
-    background-color: black;
+    margin-bottom: 22rem;
+    background-color: rgba(114, 111, 111, 0);
+    transition: all .4s;
+
 }
 
+
+.header_scroll{
+  background-color: rgb(187, 178, 178);
+  transition: all .4s;
+
+}
 header>h1>img{
     width: 10rem;
     height:10rem;
@@ -52,6 +94,30 @@ header>h1>img{
     background-size: cover;
     background-attachment: fixed
 
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    visibility: hidden;
+    opacity: 1;
+    transition: all ease-in-out .3s;
+    font-size: .3rem;
+
+}
+
+.show{
+    display: grid;
+    visibility: visible;
+    opacity: 1;
+    font-size: 4rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 20px 25px -5px, rgba(255, 255, 255, 0.04) 0px 10px 10px -5px;  transition: all ease-in-out .3s;
+}
+
+.contact>li>a{
+    color: white;
 }
 
 .banniere_a>p{
@@ -85,7 +151,7 @@ header>h1>img{
 
 
 .banniere_b>div:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(238, 100, 238, 0.35) 0px 5px 15px;
     transition: all .3s;
 }
 
@@ -112,6 +178,7 @@ header>h1>img{
 }
 .div_grid_text>img{
     display: block;
+    height: 100%;
     margin:0 auto;
     vertical-align: middle;
     width: 90%;
@@ -119,7 +186,9 @@ header>h1>img{
 .banniere_c>p{
     padding: .5rem;
 }
-
+.bodychange{
+  filter: brightness(1rem);
+}
 
 footer>ul{
     
@@ -131,6 +200,11 @@ footer>ul{
     grid-template-columns: repeat(4,1fr);
 }
 
+.formm{
+    width: 100%;
+    height: 20rem;
+    display: block;
+}
 
   
   footer>ul>li:hover {
@@ -153,5 +227,225 @@ footer>ul{
 
 
   footer>ul>li>a{
+      cursor: pointer;
       color: black;
+  }
+
+  .appear{
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: none;
+    width: 60%;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    width: 100%;
+    margin:0 auto;
+    font-size: 20px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin:1rem auto;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  button[type="submit"] {
+    font-family: 'Bellota Text', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;	      
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all ease-in-out .3s;
+
+    transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(247, 191, 247);
+    transition: all ease-in-out .3s;
+  }
+  #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  
+  
+
+
+  .popup_garages{
+    overflow: scroll;
+    z-index: 122;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-1000%);
+    width: 60rem;
+    transition: all .8s;
+
+    height: 50rem;
+    background-color: rgba(222, 156, 238, 0.829);
+  }
+.popup_garages_show{
+  overflow: scroll;
+  transition: all .8s;
+  z-index: 122;
+  position: fixed;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%,-96%);
+  width: 60rem;
+  height: 50rem;
+  background-color: rgba(222, 156, 238, 0.829);
+}
+  .popup_garages>h2{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .popup_garages>h2>span{
+  cursor: pointer;
+   position: absolute;
+   right: 2rem;
+   top: -.5rem;
+
+  }
+  .grid_nosgarages{
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+  }
+
+  .num{
+    width: 100%;
+    height: 4rem;
+  }
+
+  .num>a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+
+  .num>a::after{
+    background-image: url(https://cdn.icon-icons.com/icons2/909/PNG/512/telephone_icon-icons.com_70849.png);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    margin-left: 2rem;
+    content:"";
+  }
+  .close_button{
+    
+  }
+  .grid_nosgarages>div{
+    position: relative;
+    margin: 0 auto;
+    height: 20rem;
+    width: 90%;
+    background-color: rgb(226, 240, 168);
+    margin-bottom: 1rem;
+  }
+
+  
+  .grid_nosgarages>div>p{
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+
+  .d-block{
+    height: 100vh;
+  }
+
+
+  .banniere_b>div>p{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    font-size: 3rem;
+    transform: translate(-50%,-50%);
+  }
+
+  .banniere_b>div{
+
+    position: relative;
+  }
+
+  footer>div{
+    width: 100%;
+    height: 6rem;
+    background-color: black;
+  }
+
+  footer>div>p{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
   }
