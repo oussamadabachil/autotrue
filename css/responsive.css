@@ -85,18 +85,6 @@ background-color: rgb(114, 111, 111);
 
 }
 
-.services_a>.nos_services_grid{
-    position: absolute;
-  
-    display: grid;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%,-80%);
-    grid-template-columns: repeat(2,1fr);
-   
-    width: 100%;
-    height: 40vh;
-  }
   .services_a>.nos_services_grid>div{
     display: block;
     margin: 1rem auto;
@@ -122,6 +110,29 @@ background-color: rgb(114, 111, 111);
     }
 
 
+    .services_a{
+        position: relative;
+        background-image: url(../asset/BBHPIECEAUTO_fond_services.jpg);
+        background-size: cover;
+      background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+      
+      }
+      
+      
+      .services_a>.nos_services_grid{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: grid;
+      
+        grid-template-columns: repeat(2,1fr);
+       
+        width: 90%;
+      }
+      
     .popup_garages{
         overflow: scroll;
         z-index: 122;
