@@ -63,16 +63,5 @@ button_contact.addEventListener("click",()=>{
 
 
 })
-nosgbutt.addEventListener("click",()=>{
-    effect_menu.classList.toggle("effect_menu_show")
-
-    popUPg.classList.toggle("popup_garages_show")
-})
 
 
-
-close_span.addEventListener("click",()=>{
-    effect_menu.classList.toggle("effect_menu_show")
-
-    popUPg.classList.toggle("popup_garages_show")
-})

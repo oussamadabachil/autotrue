@@ -52,12 +52,12 @@ button_contact.addEventListener("click",()=>{
     menu.classList.remove("menu_shown")
     
     if(containerr.style.display=="block"){
-        location.href = "#container";
+        location.href = "#contactez_nous";
 
     }
     else{
     containerr.style.display="block"
-    location.href = "#container";
+    location.href = "#contactez_nous";
 
     }
 
