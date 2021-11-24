@@ -11,6 +11,7 @@
     .div_grid_text{
         display: block;
     }
+   
     .show{
         display: block;
         visibility: visible;
@@ -67,13 +68,15 @@ background-color: rgb(114, 111, 111);
     position: fixed;
     z-index: 20;
     top: 1.5rem;
-    left: 1rem;
-    width: 50px;
-    height: 50px;
+    left: 1.5rem;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
   }
 
 .logo_menu>li{
+    width: 100%;
+    font-size: 3.1rem;
     text-align: center;
     margin-bottom: 2rem;
     margin-left: -1rem;
