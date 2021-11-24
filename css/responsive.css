@@ -109,7 +109,13 @@ background-color: rgb(114, 111, 111);
     color: white;
     }
 
+#carouselExampleIndicators{
+    height: 70vh;
+}
+.carousel-item{
+    height: 70vh;
 
+}
     .services_a{
         position: relative;
         background-image: url(../asset/BBHPIECEAUTO_fond_services.jpg);
