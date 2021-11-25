@@ -572,4 +572,17 @@ text-align: justify;
 color: white;
 }
 
+main{
+  margin-bottom: 15rem;
+}
 
+
+
+footer{
+  background-color: rgba(255, 255, 255, 0.411);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 15rem;
+
+}
