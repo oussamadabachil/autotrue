@@ -1,5 +1,36 @@
 @media screen and (max-width: 1040px) {
 
+
+
+
+
+
+
+
+
+  footer{
+    display: block;
+
+    position: inherit;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.37);
+      height: auto;  
+    }
+  footer>ul{
+
+      display: block;
+      
+  }
+  footer>ul>li{
+    padding: 1rem;
+  }
+
+  footer>ul>li:hover{
+  transform: scale(1);
+    transition: all ease-in-out .3s;
+
+  }
     .banniere_b{
         display: grid;
         margin: 2rem auto;
@@ -20,21 +51,7 @@
         box-shadow: rgba(255, 255, 255, 0.1) 0px 20px 25px -5px, rgba(255, 255, 255, 0.04) 0px 10px 10px -5px;  transition: all ease-in-out .3s;
     }
     
-    footer{
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.37);
-        height: auto;  
-      }
-    footer>ul{
-        margin-top: 1rem;
-
-        display: block;
-        
-    }
-    footer>ul>li{
-        padding: 1rem;
-    }
+    
 
 .banniere_a{
     position: relative;
@@ -118,6 +135,11 @@ background-color: rgb(243, 199, 236);
     height: 70vh;
 
 }
+
+main{
+  margin-bottom:0rem;
+}
+
     .services_a{
         position: relative;
         background-image: url(../asset/BBHPIECEAUTO_fond_services.jpg);
